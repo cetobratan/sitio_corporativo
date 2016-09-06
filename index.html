@@ -4,7 +4,24 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(inicio) 
+		function inicio() {
+			$("select").change(cambiacss);
+			 }
+		function cambiacss() {
+			var plantilla =$("select").val();
+			$("plantilla").html('<link rel="stylesheet" href="css/'+plantilla+'.css" type="text/css">'); 	  
+			 }	 
+	
+	</script>
+	<plantilla>
+
+	
+	</plantilla>
+
 </head>
 <body>
 <select name="plantilla" id="">
@@ -29,13 +46,13 @@
 						<a href="index.html">Inicio</a>
 					</li>
 					<li>
-						<a href="index.html">Blog</a>
+						<a href="blog.html">Blog</a>
 					</li>
 					<li>
-						<a href="index.html">Prodictos</a>
+						<a href="productos.html">Productos</a>
 					</li>
 					<li>
-						<a href="index.html">Contactos</a>
+						<a href="contactos.html">Contactos</a>
 					</li>
 				</ul>
 			</nav>
